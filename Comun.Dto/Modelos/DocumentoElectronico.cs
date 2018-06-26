@@ -88,6 +88,12 @@ namespace WinApp.Comun.Dto.Modelos
 
         public decimal CalculoDetraccion { get; set; }
         public string LineCountNumeric { get; set; }
+        public string FirmaDigital { get; set; }
+        public string NumGuia { get; set; }
+        public string Glosa { get; set; }
+        public string ResumenFirma { get; set; }
+        public string Total2 { get; set; }
+        public string Cajas { get; set; }
         public DocumentoElectronico()
         {
             Emisor = new Contribuyente

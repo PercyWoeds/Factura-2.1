@@ -8,11 +8,11 @@
   <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
   <cbc:CustomizationID>2.0</cbc:CustomizationID>
   <cbc:ID>F001-00000001</cbc:ID>
-  <cbc:IssueDate>2018-06-22</cbc:IssueDate>
-  <cbc:IssueTime>17:09:13</cbc:IssueTime>
-  <cbc:DueDate>2018-06-22</cbc:DueDate>
+  <cbc:IssueDate>2018-06-26</cbc:IssueDate>
+  <cbc:IssueTime>12:53:55</cbc:IssueTime>
+  <cbc:DueDate>2018-06-26</cbc:DueDate>
   <cbc:InvoiceTypeCode listID="0101" listAgencyName="PE:SUNAT" listName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">01</cbc:InvoiceTypeCode>
-  <cbc:Note languageLocaleID="1000">CUARENTA Y TRES MIL OCHOCIENTOS CUARENTA CON 00/100</cbc:Note>
+  <cbc:Note languageLocaleID="1000">CINCUENTA Y UNO MIL SETECIENTOS TREINTA Y UNO CON 20/100</cbc:Note>
   <cbc:DocumentCurrencyCode listID="ISO 4217 Alpha" listName="Currency" listAgencyName="United Nations Economic Commission for Europe">PEN</cbc:DocumentCurrencyCode>
   <cbc:LineCountNumeric>1</cbc:LineCountNumeric>
   <cac:Signature>
@@ -58,22 +58,22 @@
     </cac:Party>
   </cac:AccountingCustomerParty>
   <cac:TaxTotal>
-    <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>
+    <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
     <cac:TaxSubtotal>
       <cbc:TaxableAmount currencyID="PEN">43840.00</cbc:TaxableAmount>
-      <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
       <cac:TaxCategory>
-        <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">E</cbc:ID>
+        <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID>
         <cac:TaxScheme>
-          <cbc:ID schemeID="UN/ECE 5305" schemeAgencyID="6">9997</cbc:ID>
-          <cbc:Name>EXO</cbc:Name>
+          <cbc:ID schemeID="UN/ECE 5305" schemeAgencyID="6">1000</cbc:ID>
+          <cbc:Name>IGV</cbc:Name>
           <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
         </cac:TaxScheme>
       </cac:TaxCategory>
     </cac:TaxSubtotal>
   </cac:TaxTotal>
   <cac:LegalMonetaryTotal>
-    <cbc:PayableAmount currencyID="PEN">43840.00</cbc:PayableAmount>
+    <cbc:PayableAmount currencyID="PEN">51731.20</cbc:PayableAmount>
   </cac:LegalMonetaryTotal>
   <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
@@ -86,17 +86,17 @@
       </cac:AlternativeConditionPrice>
     </cac:PricingReference>
     <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>
+      <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
       <cac:TaxSubtotal>
         <cbc:TaxableAmount currencyID="PEN">43840.00</cbc:TaxableAmount>
-        <cbc:TaxAmount currencyID="PEN">0.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="PEN">7891.20</cbc:TaxAmount>
         <cac:TaxCategory>
-          <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">E</cbc:ID>
-          <cbc:Percent>0.00</cbc:Percent>
-          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="SUNAT:Codigo de Tipo de Afectación del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">20</cbc:TaxExemptionReasonCode>
+          <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID>
+          <cbc:Percent>18.00</cbc:Percent>
+          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="SUNAT:Codigo de Tipo de Afectación del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>
           <cac:TaxScheme>
-            <cbc:ID schemeID="UN/ECE 5153" schemeName="Tax Scheme Identifier" schemeAgencyName="United Nations Economic Commission for Europe">9997</cbc:ID>
-            <cbc:Name>EXO</cbc:Name>
+            <cbc:ID schemeID="UN/ECE 5153" schemeName="Tax Scheme Identifier" schemeAgencyName="United Nations Economic Commission for Europe">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
             <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
           </cac:TaxScheme>
         </cac:TaxCategory>

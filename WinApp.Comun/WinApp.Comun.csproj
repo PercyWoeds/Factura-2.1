@@ -46,6 +46,7 @@
     <Compile Include="Constantes\InvoiceTypeCode.cs" />
     <Compile Include="Constantes\PartyIdentification2.cs" />
     <Compile Include="Conversion.cs" />
+    <Compile Include="Herramientas.cs" />
     <Compile Include="IEstructuraXml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

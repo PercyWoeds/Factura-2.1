@@ -10,6 +10,7 @@ using WinApp.Firmado;
 using WinApp.Properties;
 using WinApp.Servicio;
 using WinApp.Servicio.Soap;
+using WinApp.Comun;
 
 namespace WinApp
 {
@@ -22,6 +23,7 @@ namespace WinApp
         #region Propiedades
         public string RutaArchivo { get; set; }
         public string IdDocumento { get; set; }
+        
         #endregion
 
         #region Constructores
@@ -154,7 +156,7 @@ namespace WinApp
             _documento.FechaEmision = DateTime.Today.ToShortDateString();
             _documento.Moneda = "PEN";
             _documento.TipoOperacion = "0101"; //Venta interna
-           
+            _documento.Glosa = "Aquí alguna observación";
             CalcularTotales();
         }
 
@@ -339,6 +341,7 @@ namespace WinApp
 
             _documento.TotalVenta = _documento.Gravadas + _documento.Exoneradas + _documento.Inafectas +
                                     _documento.TotalIgv + _documento.TotalIsc + _documento.TotalOtrosTributos;
+            _documento.MontoEnLetras = Conversion.Enletras(_documento.TotalVenta); //Monto en letras agregado
 
         }
 
@@ -454,7 +457,8 @@ namespace WinApp
 
                 ICertificador certificador = new Certificador();
                 var respuestaFirmado = await new Firmar(certificador).Post(firmadoRequest);
-
+                _documento.ResumenFirma = respuestaFirmado.ResumenFirma; //Firma para ser usada en el PDF si es necesario
+                _documento.FirmaDigital = respuestaFirmado.ValorFirma; // Usado para la firma, no olvidar agregar las referencias iTextSharp para generar los PDF y las firmas
                 if (!respuestaFirmado.Exito)
                     throw new ApplicationException(respuestaFirmado.MensajeError);
 
